@@ -1,0 +1,71 @@
+/* Set background image and styling for the calculator container */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('C:/Users/hriti/Downloads/MDS615-Group-Project/Images/calculator_bg3.jpg'); /* Replace with your image path or URL */
+    background-size: cover; /* Ensures the image covers the entire background */
+    background-position: center;
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Centering the calculator container */
+.calculator-container {
+    background: rgb(0, 0, 0); /* White background with some transparency */
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    width: 300px;
+}
+
+/* Calculator Screen */
+#calculator-screen {
+    font-size: 2em;
+    margin-bottom: 20px;
+    background: #333;
+    color: #fff;
+    text-align: right;
+    padding: 10px;
+    border-radius: 5px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+/* Calculator Button Styles */
+.calc-btn {
+    width: 60px;
+    height: 60px;
+    font-size: 1.5em;
+    margin: 5px;
+    background: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.calc-btn:hover {
+    background: #0056b3;
+}
+
+/* Layout adjustment for the calculator buttons */
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+}
+
+/* Result display */
+.result {
+    margin-top: 10px;
+    font-size: 1.2em;
+    color: #333;
+    text-align: center;
+}
